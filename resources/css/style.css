@@ -104,6 +104,7 @@ header a {
     padding: 32px 24px;
     flex-direction: column;
     text-align: left;
+    border-right: solid 1px lightgray;
 }
 
 #practicing .left-section .image-container {
@@ -132,7 +133,6 @@ header a {
     align-items: center;
     flex-direction: column;
     text-align: left;
-    border-left: solid 1px lightgray;
 }
 
 #practicing .right-section .orientation {
@@ -173,7 +173,6 @@ header a {
     flex: 1;
     flex-direction: column;
     text-align: left;
-    flex-wrap: wrap;
 }
 
 #practicing .right-section h3 {
@@ -186,4 +185,36 @@ header a {
 
 #practicing .right-section a {
     text-decoration: none;
+}
+
+/* Courses Section */
+
+#courses {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightgray;
+}
+
+#courses .center-box {
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+#courses .image-container {
+    height: 200px;
+    width: 300px;
+    overflow: hidden;
+}
+
+#courses .content {
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+#courses h2 {
+    margin: 32px 0;
 }
