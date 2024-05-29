@@ -9,6 +9,10 @@ h1 {
     font-size: 40px;
 }
 
+h2 {
+    font-size: 30px;
+}
+
 h3 {
     font-size: 20px;
 }
@@ -81,5 +85,105 @@ header a {
     background-color: rgb(63, 63, 63);
     padding: 8px 16px;
     text-align: center;
+    text-decoration: none;
+    margin: 20px 0;
+}
+
+/* Practicing Section */
+
+#practicing {
+    display: flex;
+    align-items: center;
+}
+
+#practicing .left-section {
+    display: flex;
+    max-width: 60%;
+    flex: 1;
+    align-items: center;
+    padding: 32px 24px;
+    flex-direction: column;
+    text-align: left;
+}
+
+#practicing .left-section .image-container {
+    overflow: hidden;
+}
+
+#practicing .left-section img {
+    width: 100%;
+    object-fit: cover;
+}
+
+#practicing .left-section h2 {
+    margin: 32px 0 24px 0;
+}
+
+#practicing .left-section p {
+    margin: 32px 0 0 0;
+    font-weight: lighter;
+    font-size: 14px;
+}
+
+#practicing .right-section {
+    display: flex;
+    max-width: 40%;
+    flex: 1;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+    border-left: solid 1px lightgray;
+}
+
+#practicing .right-section .orientation {
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+
+#practicing .right-section .campus {
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+
+#practicing .right-section .guest-lecture {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    background-color: lightgray;
+}
+
+#practicing .right-section .image-container {
+    display: flex;
+    flex: 1;
+    max-width: 35%;
+    overflow: hidden;
+    padding: 16px;
+}
+
+#practicing .right-section img {
+    width: 100%;
+    object-fit: cover;
+}
+
+#practicing .right-section text {
+    display: flex;
+    max-width: 65%;
+    flex: 1;
+    flex-direction: column;
+    text-align: left;
+    flex-wrap: wrap;
+}
+
+#practicing .right-section h3 {
+    margin: 0;
+}
+
+#practicing .right-section h4 {
+    margin: 8px 0;
+}
+
+#practicing .right-section a {
     text-decoration: none;
 }
