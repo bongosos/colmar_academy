@@ -48,6 +48,10 @@ header a {
     color: black;
 }
 
+header .mobile {
+    display: none;
+  }
+
 /* Learning Section */
 
 #learning {
