@@ -61,13 +61,14 @@ header a {
     max-width: 60%;
     flex: 1;
     align-items: center;
-    padding: 32px 24px;
+    
     overflow: hidden;
 }
 
 #learning .image-container img {
-    width: 100%;
+    width: 94%;
     object-fit: cover;
+    padding: 32px 24px;
 }       
 
 #learning .text {
@@ -83,7 +84,7 @@ header a {
 #learning .text .button {
     color: white;
     background-color: rgb(63, 63, 63);
-    padding: 8px 16px;
+    padding: 16px 16px;
     text-align: center;
     text-decoration: none;
     margin: 20px 0;
@@ -130,7 +131,7 @@ header a {
     display: flex;
     max-width: 40%;
     flex: 1;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
     text-align: left;
 }
@@ -168,8 +169,8 @@ header a {
 }
 
 #practicing .right-section text {
-    display: flex;
     max-width: 65%;
+    display: flex;
     flex: 1;
     flex-direction: column;
     text-align: left;
@@ -179,42 +180,22 @@ header a {
     margin: 0;
 }
 
+#practicing .left-section h4 {
+    font-weight: 100;
+}
+
 #practicing .right-section h4 {
     margin: 8px 0;
+    font-weight: 100;
 }
 
 #practicing .right-section a {
     text-decoration: none;
 }
 
+#practicing .left-section p {
+    font-weight: 600;
+}
+
 /* Courses Section */
 
-#courses {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: lightgray;
-}
-
-#courses .center-box {
-    width: auto;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: center;
-}
-
-#courses .image-container {
-    height: 200px;
-    width: 300px;
-    overflow: hidden;
-}
-
-#courses .content {
-    padding-top: 5px;
-    padding-bottom: 10px;
-}
-
-#courses h2 {
-    margin: 32px 0;
-}
