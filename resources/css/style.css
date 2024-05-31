@@ -137,18 +137,25 @@ header a {
 }
 
 #practicing .right-section .orientation {
+    width: 100%;
     display: flex;
     flex: 1;
     align-items: center;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 1px;
 }
 
 #practicing .right-section .campus {
+    width: 100%;
     display: flex;
     flex: 1;
     align-items: center;
+    border-top: 1px solid lightgray;
+    margin-top: 1px;
 }
 
 #practicing .right-section .guest-lecture {
+    width: 100%;
     display: flex;
     flex: 1;
     align-items: center;
@@ -181,12 +188,14 @@ header a {
 }
 
 #practicing .left-section h4 {
+    color: gray;
     font-weight: 100;
 }
 
 #practicing .right-section h4 {
-    margin: 8px 0;
+    color: gray;
     font-weight: 100;
+    margin: 8px 0;
 }
 
 #practicing .right-section a {
@@ -199,3 +208,206 @@ header a {
 
 /* Courses Section */
 
+#courses {
+    align-items: center;
+    background-color: lightgray;
+    align-items: center;
+    align-content: center;
+}
+
+#courses h2 {
+    text-align: center;
+    padding: 32px 0;
+    margin: 0;
+}
+
+#courses .center-box {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin: 0 72px 32px 72px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#courses .center {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+}
+
+#courses .center .image-container {
+    overflow: hidden;
+}
+
+#courses .center img {
+    width: 100%;
+    object-fit: cover;
+}
+
+#courses .center .content {
+    margin: 16px;
+    text-align: left;
+}
+
+#courses .center .content h3 {
+    margin: 0;
+}
+
+#courses .center .content h4 {
+    color: gray;
+    font-weight: 100;
+    margin: 8px 0;
+}
+
+#courses .center .content h5 {
+    color: gray;
+    font-weight: 100;
+    margin: 0;
+}
+
+/* Thesis Section */
+
+#thesis {
+    align-items: center;
+}
+
+#thesis h2 {
+    text-align: center;
+    padding: 32px 0;
+    margin: 0;
+}
+
+#thesis .thesis-box {
+    display: flex;
+    flex: 1;
+    align-items: flex-start;
+}
+
+#thesis .left-section {
+    display: flex;
+    max-width: 60%;
+    flex: 1;
+    align-items: center;
+    padding: 0  24px 32px 24px;
+    flex-direction: column;
+    text-align: left;
+}
+
+#thesis .left-section .image-container {
+    overflow: hidden;
+}
+
+#thesis .left-section video {
+    width: 100%;
+    object-fit: cover;
+}
+
+#thesis .left-section h3 {
+    padding: 24px 0 8px 0;
+    margin: 0;
+}
+
+#thesis .left-section h5 {
+    color: gray;
+    font-weight: 100;
+    margin: 0;
+}
+
+#thesis .right-section {
+    display: flex;
+    max-width: 40%;
+    flex: 1;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: left;
+}
+
+#thesis .right-section .fisma {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 1px;
+    background-color: lightgray;
+}
+
+#thesis .right-section .now-and-then {
+    width: 100%;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    border-top: 1px solid lightgray;
+    margin-top: 1px;
+}
+
+#thesis .right-section .image-container {
+    display: flex;
+    flex: 1;
+    max-width: 35%;
+    overflow: hidden;
+    padding: 16px;
+}
+
+#thesis .right-section img {
+    width: 100%;
+    object-fit: cover;
+}
+
+#thesis .right-section text {
+    display: flex;
+    flex: 1;
+    max-width: 65%;
+    flex-direction: column;
+    text-align: left;
+}
+
+#thesis .right-section h5 {
+    color: gray;
+    font-weight: 100;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    padding: 24px 16px;
+    border-top: 1px solid lightgray;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    color: gray;
+    margin: 0;
+}
+
+footer div {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+footer .copyright {
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+}
+
+footer .terms {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+footer .terms a {
+    color: gray;
+    padding-left: 15px;
+    text-decoration: none;
+}
