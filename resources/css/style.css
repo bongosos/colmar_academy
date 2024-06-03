@@ -25,6 +25,13 @@ header .content {
     align-items: center;
 }
 
+header .desktop {
+    display: flex;
+    height: 32px;
+    flex: 1;
+    align-items: center;
+}
+
 header .logo {
     display: flex;
     height: 32px;
@@ -52,6 +59,36 @@ header .mobile {
     display: none;
   }
 
+  @media only screen and (max-width: 612px) {
+    header .desktop {
+      display: none;
+    }
+  
+    header .mobile {
+      display: block;
+      width: 100%;
+      height: 64px;
+      align-content: center;
+      justify-content: center;
+    }
+
+    header .mobile ul {
+        width: 100%;
+        height: 100%;
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+
+    }
+    
+    header .mobile li {
+        padding: 0;
+    }
+  }
+
 /* Learning Section */
 
 #learning {
@@ -65,7 +102,6 @@ header .mobile {
     max-width: 60%;
     flex: 1;
     align-items: center;
-    
     overflow: hidden;
 }
 
@@ -92,6 +128,58 @@ header .mobile {
     text-align: center;
     text-decoration: none;
     margin: 20px 0;
+}
+
+@media only screen and (max-width: 612px) {
+    #learning {
+        display: flex;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        background-color: lightgray;
+    }
+
+    #learning .image-container {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        align-items: center;
+        padding: 0;
+    }
+
+    #learning .image-container img {
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+
+    #learning .text {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        padding: 0;
+        text-align: left;
+        margin: 32px 16px;
+    }
+
+    #learning h1 {
+        margin: 0;
+    }
+
+    #learning h3 {
+        margin: 0;
+        padding-top: 32px;
+        padding-bottom: 24px;
+    }
+
+    #learning .text .button {
+        display: block;
+        width: 92%;
+        margin: 0 auto;
+        padding: 16px auto;
+        line-height: 1.4;
+    }
 }
 
 /* Practicing Section */
@@ -208,6 +296,63 @@ header .mobile {
 
 #practicing .left-section p {
     font-weight: 600;
+}
+
+@media only screen and (max-width: 612px) {
+    #practicing {
+        display: flex;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #practicing .left-section {
+        display: none;
+    }
+
+    #practicing .right-section {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        padding: 0;
+        text-align: left;
+        margin: 16px 16px 32px 16px;
+    }
+
+    #practicing .right-section .orientation {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #practicing .right-section .campus {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #practicing .right-section .guest-lecture {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: white;
+    }
+
+    #practicing .right-section .image-container {
+        display: flex;
+        max-width: 100%;
+        flex: 1;
+        overflow: hidden;
+    }
+
+    #practicing h1 {
+        margin: 0;
+    }
+
+    #practicing h3 {
+        margin: 0;
+    }
 }
 
 /* Courses Section */
