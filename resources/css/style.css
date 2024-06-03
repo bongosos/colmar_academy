@@ -226,31 +226,17 @@ header .mobile {
     align-items: flex-start;
     flex-direction: column;
     text-align: left;
+    margin-right: 10px;
 }
 
-#practicing .right-section .orientation {
+#practicing .right-section .center {
     width: 100%;
     display: flex;
     flex: 1;
     align-items: center;
-    border-bottom: 1px solid lightgray;
-    margin-bottom: 1px;
 }
 
-#practicing .right-section .campus {
-    width: 100%;
-    display: flex;
-    flex: 1;
-    align-items: center;
-    border-top: 1px solid lightgray;
-    margin-top: 1px;
-}
-
-#practicing .right-section .guest-lecture {
-    width: 100%;
-    display: flex;
-    flex: 1;
-    align-items: center;
+#practicing .right-section .center:hover {
     background-color: lightgray;
 }
 
@@ -303,7 +289,6 @@ header .mobile {
         display: flex;
         width: 100%;
         height: auto;
-        flex-direction: column;
         align-items: center;
     }
 
@@ -312,38 +297,34 @@ header .mobile {
     }
 
     #practicing .right-section {
-        display: block;
+        display: flex;
         max-width: 100%;
         height: auto;
         padding: 0;
         text-align: left;
+        flex-direction: column;
         margin: 16px 16px 32px 16px;
     }
 
-    #practicing .right-section .orientation {
-        width: 100%;
+    #practicing .right-section .center {
+        max-width: 100%;
         flex-direction: column;
         align-items: flex-start;
-    }
-
-    #practicing .right-section .campus {
-        width: 100%;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    #practicing .right-section .guest-lecture {
-        width: 100%;
-        flex-direction: column;
-        align-items: flex-start;
-        background-color: white;
     }
 
     #practicing .right-section .image-container {
-        display: flex;
+        box-sizing: border-box;
         max-width: 100%;
-        flex: 1;
-        overflow: hidden;
+        padding: 0;
+        overflow: auto;    
+    }
+
+    #practicing .right-section img {
+   
+    }
+
+    #practicing .right-section .text {
+        padding: 16px;
     }
 
     #practicing h1 {
@@ -473,26 +454,19 @@ header .mobile {
     align-items: flex-start;
     flex-direction: column;
     text-align: left;
+    margin-right: 10px;
 }
 
-#thesis .right-section .fisma {
+#thesis .right-section .center {
     width: 100%;
     height: auto;
     display: flex;
     flex: 1;
     align-items: center;
-    border-bottom: 1px solid lightgray;
-    margin-bottom: 1px;
-    background-color: lightgray;
 }
 
-#thesis .right-section .now-and-then {
-    width: 100%;
-    display: flex;
-    flex: 1;
-    align-items: center;
-    border-top: 1px solid lightgray;
-    margin-top: 1px;
+#thesis .right-section .center:hover {
+    background-color: lightgray;
 }
 
 #thesis .right-section .image-container {
