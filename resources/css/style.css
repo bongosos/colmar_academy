@@ -408,7 +408,7 @@ header .mobile {
 
     #courses .center-box {
         display: flex;
-        margin: 0 16px;
+        margin: 32px 16px;
         flex: 1;
         flex-direction: column;
     }
@@ -423,10 +423,6 @@ header .mobile {
 
     #courses .center .content {
         text-align: center;
-    }
-
-    #courses .center .content h3 {
-
     }
 
     #courses .center .content h4 {
@@ -533,6 +529,39 @@ header .mobile {
     font-weight: 100;
 }
 
+@media only screen and (max-width: 612px) {
+
+    #thesis h2 {
+        text-align: center;
+        padding: 32px 0 16px 0;
+        margin: 0;
+    }
+
+    #thesis .thesis-box {
+        display: block;
+    }
+
+    #thesis .left-section {
+        display: flex;
+        max-width: 100%;
+        width: 100%;
+        padding: 0 0 24px 0;
+        margin: 0;
+    }
+
+    #thesis .left-section h3 {
+        display: none;
+    }
+
+    #thesis .left-section h5 {
+        display: none;
+    } 
+    
+    #thesis .right-section {
+        display: none;
+    }
+}
+
 /* Footer */
 
 footer {
@@ -571,4 +600,23 @@ footer .terms a {
     color: gray;
     padding-left: 15px;
     text-decoration: none;
+}
+
+@media only screen and (max-width: 612px) {
+    footer {
+        display: block;
+        padding: 0;
+        border: 0;
+    }
+
+    footer div .terms {
+        display: none;
+    }
+
+    footer .copyright {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        padding: 16px;
+    }
 }
