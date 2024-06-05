@@ -309,7 +309,7 @@ header .mobile {
     #practicing .right-section .center {
         max-width: 100%;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
 
     #practicing .right-section .image-container {
@@ -317,10 +317,6 @@ header .mobile {
         max-width: 100%;
         padding: 0;
         overflow: auto;    
-    }
-
-    #practicing .right-section img {
-   
     }
 
     #practicing .right-section .text {
@@ -399,6 +395,48 @@ header .mobile {
     margin: 0;
 }
 
+@media only screen and (max-width: 612px) {
+    #courses {
+        background-color: white;
+    }
+
+    #courses h2 {
+        text-align: center;
+        padding: 32px 0 16px 0;
+        margin: 0;
+    }
+
+    #courses .center-box {
+        display: flex;
+        margin: 0 16px;
+        flex: 1;
+        flex-direction: column;
+    }
+
+    #courses .center {
+        background-color: lightgray;
+    }
+
+    #courses .center .image-container{
+        display: none;
+    }
+
+    #courses .center .content {
+        text-align: center;
+    }
+
+    #courses .center .content h3 {
+
+    }
+
+    #courses .center .content h4 {
+        display: none;
+    }
+
+    #courses .center .content h5 {
+        display: none;
+    }
+}
 /* Thesis Section */
 
 #thesis {
